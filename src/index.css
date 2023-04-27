@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-lg font-primary;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-dark;
+  }
+  .title,
+  .section-title {
+    @apply mb-6 text-6xl font-bold lg:text-8xl;
+  }
+  .h2 {
+    @apply text-5xl font-bold lg:text-7xl;
+  }
+  .pretitle {
+    @apply text-lg lg:text-[22px] text-light mb-4 lg:mb-6 uppercase font-normal;
+  }
+  .lead {
+    @apply mb-6 text-2xl font-normal text-light;
+  }
+  .link {
+    @apply text-lg text-dark;
+  }
+  .section {
+    @apply py-8 lg:py-[142px];
+  }
+  .btn {
+    @apply flex items-center justify-center transition rounded-lg;
+  }
+  .btn-lg {
+    @apply h-[75px] px-6 text-2xl font-normal;
+  }
+  .btn-md {
+    @apply h-[60px] px-[16px] text-lg font-normal;
+  }
+  .btn-sm {
+    @apply h-[48px] px-[16px] text-lg font-normal;
+  }
+  .btn-accent {
+    @apply text-white bg-accent hover:bg-accentHover;
+  }
+  .btn-white {
+    @apply bg-white text-accent hover:bg-white/90;
+  }
+  .btn-outline {
+    @apply bg-transparent border text-accent border-accent hover:bg-accent hover:text-white;
+  }
+  .btn-link {
+    @apply text-xl text-accent lg:text-2xl;
+  }
+}
