@@ -29,6 +29,10 @@ const Header = ({ user }) => {
   const [isActive, setIsActive] = useState(false);
   // destructure header data
   const { logo } = header;
+  // User icon
+  const defaultImageUrl = "https://e7.pngegg.com/pngimages/520/472/png-clipart-computer-icons-avatar-man-male-face-head-man-icon-miscellaneous-human.png";
+  const imageUrl = user?.photoURL ? user.photoURL : defaultImageUrl;
+
   // scroll event
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -56,13 +60,13 @@ const Header = ({ user }) => {
           </div>
           <Menu>
             <MenuButton>
-                <Image
-                  src={user?.photoURL? "https://e7.pngegg.com/pngimages/520/472/png-clipart-computer-icons-avatar-man-male-face-head-man-icon-miscellaneous-human.png":user?.photoURL }
-                  width="40px"
-                  height="40px"
-                  rounded="full"
-                  minWidth={"40px"}
-                />
+              <Image
+                src={imageUrl}
+                width="40px"
+                height="40px"
+                rounded="full"
+                minWidth={"40px"}
+              />
             </MenuButton>
             <MenuList shadow={"lg"}>
               <MenuItem
