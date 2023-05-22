@@ -4,14 +4,14 @@ import { nav } from '../data';
 
 const MobileNav = () => {
   return (
-    <div className='bg-accent/95 w-full h-full'>
-      <ul className='h-full flex flex-col justify-center items-center gap-y-8'>
+    <div className='w-full h-full bg-accent/95'>
+      <ul className='flex flex-col items-center justify-center h-full gap-y-8'>
         {nav.map((item, index) => {
           // destructure item
           const { href, name } = item;
           return (
             <li key={index}>
-              <a className='link text-white text-xl' href={href}>
+              <a className='text-xl text-white link' href={href}>
                 {name}
               </a>
             </li>

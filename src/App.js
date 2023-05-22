@@ -26,12 +26,12 @@ const App = () => {
   useEffect(() => {
     const accessToken = userAccessToken();
     if (!accessToken) {
-      navigate("/login", { replace: true });
+      navigate("/signin", { replace: true });
     } else {
       const [userInfo] = fetchUser();
       setUser(userInfo);
     }
-  }, []);
+  }, [navigate]);
 
   return (
     <div className='overflow-hidden'>
@@ -44,3 +44,4 @@ const App = () => {
 };
 
 export default App;
+

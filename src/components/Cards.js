@@ -31,14 +31,14 @@ const Cards = () => {
               >
                 {/* card icon */}
                 <div className='mb-6'>
-                  <img src={icon} alt='' />
+                  <img src={icon} alt='icon' />
                 </div>
                 {/* card title */}
                 <div className='mb-3 text-[30px] font-medium'>{title}</div>
                 {/* card subtitle */}
                 <p className='mb-6 text-light'>{subtitle}</p>
                 {/* arrow img */}
-                {index === cardIndex && <img src={ArrowImg} />}
+                {index === cardIndex && <img src={ArrowImg} alt='arrowimg' />}
               </div>
             </div>
           );

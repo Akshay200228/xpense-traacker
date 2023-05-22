@@ -43,7 +43,7 @@ const Header = ({ user }) => {
       >
         <div className='container flex items-center justify-between mx-auto'>
           {/* logo */}
-          <a href='#' data-aos='fade-down' data-aos-delay='1000'>
+          <a href='#hero' data-aos='fade-down' data-aos-delay='1000'>
             <img src={logo} alt='' />
           </a>
           {/* nav - initially hidden - show on desktop mode */}
@@ -57,7 +57,7 @@ const Header = ({ user }) => {
           <Menu>
             <MenuButton>
                 <Image
-                  src={user?.photoURL}
+                  src={user?.photoURL? "https://e7.pngegg.com/pngimages/520/472/png-clipart-computer-icons-avatar-man-male-face-head-man-icon-miscellaneous-human.png":user?.photoURL }
                   width="40px"
                   height="40px"
                   rounded="full"

@@ -7,7 +7,7 @@ import { FiGithub, FiTwitter } from "react-icons/fi";
 
 const Copyright = () => {
   // destructure copyright data
-  const { link1, link2, copyText } = copyright;
+  const { link1, copyText } = copyright;
   return (
     <div
       className='flex flex-col items-center gap-y-2 lg:flex-row lg:justify-between'

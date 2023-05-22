@@ -28,7 +28,7 @@ const Feature2 = () => {
             <div className='pretitle'>{pretitle}</div>
             <h2 className='title'>{title}</h2>
             <p className='lead'>{subtitle}</p>
-            <button className='btn-link flex items-center gap-x-3 hover:gap-x-5 transition-all'>
+            <button className='flex items-center transition-all btn-link gap-x-3 hover:gap-x-5'>
               {btnLink} <img src={btnIcon} alt='' />
             </button>
           </div>
