@@ -38,7 +38,7 @@ const Login = () => {
     >
       <Image 
         src='https://img.freepik.com/premium-photo/income-expenses-concept-with-yellow-background-3d-rendering_519469-343.jpg?w=2000' 
-        objectFit="cover" width={"full"} height={"full"}
+        objectFit="fit" width={"full"} height={"100vh"}
       />
       <Flex
         position={"absolute"}
@@ -51,7 +51,7 @@ const Login = () => {
         alignItems={"center"}
       >
         <HStack>
-          <div className="bg-gray-700 rounded-lg">
+          <div className="bg-black rounded-lg">
             <Button
               leftIcon={<FcGoogle fontSize={30} />}
               colorScheme="whiteAlpha"
